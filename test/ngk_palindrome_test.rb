@@ -3,7 +3,7 @@ require "test_helper"
 class MhartlPalindromeTest < Minitest::Test
 
   def test_non_palindrome
-    assert !"apple".palindrome?
+    refute "apple".palindrome?
   end
 
   def test_literal_palindrome
