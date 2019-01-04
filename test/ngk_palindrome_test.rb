@@ -1,6 +1,6 @@
 require "test_helper"
 
-class MhartlPalindromeTest < Minitest::Test
+class NgkPalindromeTest < Minitest::Test
 
   def test_non_palindrome
     refute "apple".palindrome?
@@ -20,5 +20,13 @@ class MhartlPalindromeTest < Minitest::Test
 
   def test_palindrome_with_palindromic_phrase
     assert "A man, a plan, a canal—Panama!"
+  end
+
+  def test_integer_non_palindrome
+    refute 12345.palindrome?
+  end
+
+  def test_integer_palindrome
+    assert 12321.palindrome?
   end
 end
